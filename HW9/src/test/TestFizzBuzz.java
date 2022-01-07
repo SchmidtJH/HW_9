@@ -11,7 +11,7 @@ class TestFizzBuzz {
 	FizzBuzz fizzbuzz = new FizzBuzz();
 	
 	@ParameterizedTest
-	@ValueSource(ints = {5, 25, 50, 55, 75, 100})
+	@ValueSource(ints = {5, 25, 50, 55, 75, 105})
 	public void Should_return_Fizz_if_multipleOfFive_and_not_multipleOfSeven(int number) {
 		var result = fizzbuzz.convertNumber(number);
 		var expectedResult = "Fizz";
