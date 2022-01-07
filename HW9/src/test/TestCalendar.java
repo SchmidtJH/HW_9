@@ -9,7 +9,7 @@ import main.Calendar;
 class TestCalendar {
 
 	@ParameterizedTest
-	@ValueSource(ints= {1996,2000,2004,2008,2016})
+	@ValueSource(ints= {1996,2000,2004,2008,2012})
 	public void Should_return_true(int year) {
 		Calendar calendar = new Calendar(year);
 		assertTrue(calendar.isLeapYear());
